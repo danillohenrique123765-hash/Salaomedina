@@ -233,7 +233,7 @@ Horário: ${formData.time}`
                 Redes Sociais
               </h3>
               <div className="flex gap-4">
-  
+  <a
     href="https://instagram.com/salaomedina"
     target="_blank"
     rel="noopener noreferrer"
@@ -242,7 +242,7 @@ Horário: ${formData.time}`
   >
     <Instagram className="w-6 h-6" />
   </a>
-  
+  <a
     href="https://facebook.com/salaomedina"
     target="_blank"
     rel="noopener noreferrer"

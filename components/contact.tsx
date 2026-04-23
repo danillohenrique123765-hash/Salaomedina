@@ -32,18 +32,18 @@ export function Contact() {
     name: "",
     phone: "",
     service: "",
-    message: "",
+    time: "",
   })
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    
-    const whatsappMessage = `Olá! Me chamo ${formData.name}.
-    
-Telefone: ${formData.phone}
-Serviço desejado: ${formData.service}
 
-${formData.message}`
+    const whatsappMessage = `Olá, gostaria de agendar um horário:
+
+Nome: ${formData.name}
+Telefone: ${formData.phone}
+Serviço: ${formData.service}
+Horário: ${formData.time}`
 
     const encodedMessage = encodeURIComponent(whatsappMessage)
     window.open(`https://wa.me/5565981364775?text=${encodedMessage}`, "_blank")
@@ -76,6 +76,7 @@ ${formData.message}`
             transition={{ duration: 0.8 }}
           >
             <form onSubmit={handleSubmit} className="space-y-6">
+              {/* Nome */}
               <div>
                 <label
                   htmlFor="name"
@@ -96,6 +97,7 @@ ${formData.message}`
                 />
               </div>
 
+              {/* Telefone */}
               <div>
                 <label
                   htmlFor="phone"
@@ -116,12 +118,13 @@ ${formData.message}`
                 />
               </div>
 
+              {/* Tipo de Serviço */}
               <div>
                 <label
                   htmlFor="service"
                   className="block text-foreground text-sm uppercase tracking-wider mb-2"
                 >
-                  Serviço Desejado
+                  Tipo de Serviço
                 </label>
                 <select
                   id="service"
@@ -141,22 +144,23 @@ ${formData.message}`
                 </select>
               </div>
 
+              {/* Horário Desejado */}
               <div>
                 <label
-                  htmlFor="message"
+                  htmlFor="time"
                   className="block text-foreground text-sm uppercase tracking-wider mb-2"
                 >
-                  Mensagem
+                  Horário que Deseja Agendar
                 </label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  value={formData.message}
+                <input
+                  type="time"
+                  id="time"
+                  required
+                  value={formData.time}
                   onChange={(e) =>
-                    setFormData({ ...formData, message: e.target.value })
+                    setFormData({ ...formData, time: e.target.value })
                   }
-                  className="w-full bg-card border border-border rounded-sm px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors duration-300 resize-none"
-                  placeholder="Alguma observação ou preferência de horário?"
+                  className="w-full bg-card border border-border rounded-sm px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors duration-300"
                 />
               </div>
 
@@ -229,7 +233,7 @@ ${formData.message}`
                 Redes Sociais
               </h3>
               <div className="flex gap-4">
-                <a
+                
                   href="https://instagram.com/salaomedina"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -238,7 +242,7 @@ ${formData.message}`
                 >
                   <Instagram className="w-6 h-6" />
                 </a>
-                <a
+                
                   href="https://facebook.com/salaomedina"
                   target="_blank"
                   rel="noopener noreferrer"

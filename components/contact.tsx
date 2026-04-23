@@ -192,7 +192,8 @@ Horário: ${formData.time}`
                     Endereço
                   </h3>
                   <p className="text-muted-foreground">
-                    R. Frei Salvador, 273<br />
+                    R. Frei Salvador, 273
+                    <br />
                     Cristo Rei - Várzea Grande - MT
                   </p>
                 </div>
@@ -207,7 +208,8 @@ Horário: ${formData.time}`
                     Horário de Funcionamento
                   </h3>
                   <p className="text-muted-foreground">
-                    Segunda a Sexta: 9h às 19h<br />
+                    Segunda a Sexta: 9h às 19h
+                    <br />
                     Sábado: 9h às 17h
                   </p>
                 </div>
@@ -221,9 +223,7 @@ Horário: ${formData.time}`
                   <h3 className="font-serif text-xl font-bold text-foreground mb-2">
                     Telefone
                   </h3>
-                  <p className="text-muted-foreground">
-                    (65) 98136-4775
-                  </p>
+                  <p className="text-muted-foreground">(65) 98136-4775</p>
                 </div>
               </div>
             </div>
@@ -232,26 +232,27 @@ Horário: ${formData.time}`
               <h3 className="font-serif text-xl font-bold text-foreground mb-4">
                 Redes Sociais
               </h3>
+
               <div className="flex gap-4">
-  <a
-    href="https://instagram.com/salaomedina"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-12 h-12 bg-primary/10 flex items-center justify-center rounded-sm text-primary hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
-    aria-label="Instagram"
-  >
-    <Instagram className="w-6 h-6" />
-  </a>
-  <a
-    href="https://facebook.com/salaomedina"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-12 h-12 bg-primary/10 flex items-center justify-center rounded-sm text-primary hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
-    aria-label="Facebook"
-  >
-    <Facebook className="w-6 h-6" />
-  </a>
-</div>
+                <a
+                  href="https://instagram.com/salaomedina"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-primary/10 flex items-center justify-center rounded-sm text-primary hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="w-6 h-6" />
+                </a>
+
+                <a
+                  href="https://facebook.com/salaomedina"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-primary/10 flex items-center justify-center rounded-sm text-primary hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="w-6 h-6" />
+                </a>
               </div>
             </div>
           </motion.div>
@@ -259,4 +260,4 @@ Horário: ${formData.time}`
       </div>
     </section>
   )
-      }
+}

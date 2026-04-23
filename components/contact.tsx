@@ -233,24 +233,25 @@ Horário: ${formData.time}`
                 Redes Sociais
               </h3>
               <div className="flex gap-4">
-                
-                  href="https://instagram.com/salaomedina"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-primary/10 flex items-center justify-center rounded-sm text-primary hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
-                  aria-label="Instagram"
-                >
-                  <Instagram className="w-6 h-6" />
-                </a>
-                
-                  href="https://facebook.com/salaomedina"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-primary/10 flex items-center justify-center rounded-sm text-primary hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
-                  aria-label="Facebook"
-                >
-                  <Facebook className="w-6 h-6" />
-                </a>
+  
+    href="https://instagram.com/salaomedina"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-12 h-12 bg-primary/10 flex items-center justify-center rounded-sm text-primary hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
+    aria-label="Instagram"
+  >
+    <Instagram className="w-6 h-6" />
+  </a>
+  
+    href="https://facebook.com/salaomedina"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-12 h-12 bg-primary/10 flex items-center justify-center rounded-sm text-primary hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
+    aria-label="Facebook"
+  >
+    <Facebook className="w-6 h-6" />
+  </a>
+</div>
               </div>
             </div>
           </motion.div>
